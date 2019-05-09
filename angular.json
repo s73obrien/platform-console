@@ -11,22 +11,11 @@
       "schematics": {},
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/custom-renderer",
-            "index": "src/index.html",
+            "outputPath": "dist",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "tsConfig": "src/tsconfig.app.json"
           },
           "configurations": {
             "production": {
@@ -39,30 +28,9 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
-            }
-          }
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "custom-renderer:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "custom-renderer:build:production"
+              "vendorChunk": false
             }
           }
         },

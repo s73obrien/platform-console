@@ -9,6 +9,10 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s73obrien/platform-console.git"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~7.2.0",
@@ -16,23 +20,40 @@
     "@angular/compiler": "~7.2.0",
     "@angular/core": "~7.2.0",
     "@angular/forms": "~7.2.0",
-    "@angular/platform-browser": "~7.2.0",
-    "@angular/platform-browser-dynamic": "~7.2.0",
+    "@angular/http": "^7.2.15",
+    "@angular/platform-browser": "^7.2.15",
+    "@angular/platform-browser-dynamic": "^7.2.15",
+    "@angular/platform-server": "^7.2.15",
     "@angular/router": "~7.2.0",
+    "@ngtools/webpack": "^7.3.9",
+    "@nguniversal/common": "^7.1.1",
+    "@nguniversal/module-map-ngfactory-loader": "^7.1.1",
     "core-js": "^2.5.4",
+    "flatted": "^2.0.0",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.13.0",
-    "@angular/cli": "~7.3.6",
+    "@angular-builders/custom-webpack": "^7.4.3",
+    "@angular-devkit/build-angular": "^0.13.9",
+    "@angular-devkit/build-webpack": "^0.13.9",
+    "@angular/cli": "^7.3.9",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
-    "@types/node": "~8.9.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "@types/caniuse-api": "^3.0.0",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "@types/webpack": "^4.4.31",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "caniuse-api": "^3.0.0",
     "codelyzer": "~4.5.0",
+    "dtsgenerator": "^2.0.7",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.0.0",
@@ -43,6 +64,8 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.2.2"
+    "typescript": "~3.2.2",
+    "webpack": "^4.30.0",
+    "webpack-node-externals": "^1.7.2"
   }
 }

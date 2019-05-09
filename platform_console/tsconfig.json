@@ -1,0 +1,27 @@
+{
+  "extends": "./tsconfig.base.json",
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    // "paths": {
+    //   "@angular/core": ["../../dist/packages/core"],
+    //   "@angular/platform-browser/animations": ["../../dist/packages/platform-browser/animations"],
+    //   "@angular/common": ["../../dist/packages/common"]
+    // },
+    "outDir": "./dist",
+    "resolveJsonModule": true
+  },
+
+  "files": [
+    "./public_api.ts",
+  ],
+
+  "angularCompilerOptions": {
+    "annotateForClosureCompiler": true,
+    "strictMetadataEmit": false,
+    "skipTemplateCodegen": false,
+    "flatModuleOutFile": "platform-console.js",
+    "flatModuleId": "platform-console"
+  }
+}

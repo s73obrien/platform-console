@@ -1,0 +1,10 @@
+{
+  "$schema": "@angular-devkit/architect/src/builders-schema.json",
+  "builders": {
+    "console": {
+      "class": "./src/console.builder.ts",
+      "schema": "./src/console.builder.schema.json",
+      "description": "Builds applications using the ConsoleRenderer"
+    }
+  }
+}

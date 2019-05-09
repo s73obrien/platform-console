@@ -1,0 +1,29 @@
+{
+  "name": "platform-console",
+  "version": "1.0.0",
+  "description": "Angular platform for console applications",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "builders": "builders.json",
+  "author": "Sean O'Brien <s73obrien@hotmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular-devkit/architect": "^0.13.8",
+    "@angular-devkit/core": "^7.3.8",
+    "@angular/common": "^7.2.14",
+    "@angular/compiler": "^7.2.14",
+    "@angular/compiler-cli": "^7.2.14",
+    "@angular/core": "^7.2.14",
+    "@bazel/bazel": "^0.25.1",
+    "@types/node": "^12.0.0",
+    "ng-packagr": "^5.1.0",
+    "typescript": "^3.2.4"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts"
+    }
+  }
+}
